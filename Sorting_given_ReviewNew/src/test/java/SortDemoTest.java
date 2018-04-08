@@ -19,13 +19,13 @@ class SortDemoTest {
     */
     @Test
     public void testNumber() {
-       data.initializeArray("20");
+       data.initializeArray(20);
        assertTrue(data.myArray.length == 20);
        
-       data.initializeArray("30");
+       data.initializeArray(30);
        assertTrue(data.myArray.length == 30);
        
-       data.initializeArray("0");
+       data.initializeArray(0);
        assertTrue(data.myArray.length == 0);
     }
 
@@ -37,7 +37,7 @@ class SortDemoTest {
     public void negativeArraySize() {
         assertThrows(NegativeArraySizeException.class,
                 ()->{
-                    data.initializeArray("-3"); 
+                    data.initializeArray(-3); 
                 });
     }
     
